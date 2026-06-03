@@ -2,6 +2,13 @@
 Repository for installing GODDeSS framework at Geant4 v.10.05.0
 
 ## Installing Geant4 v. 10.05.0
+Download the zip file of Geant4 v.10.05.0 from official page:
+```html
+https://geant4.web.cern.ch/download/10.5.0.html
+```
+or from this repository at sourceFILE directory.
+
+
 If you are using modern versions of Cmake, you need to modify some clases.
 For cmake 3.28.3 and gcc 13.3.0 you need to modify 2 files in order to compile Geant4
 
@@ -26,3 +33,8 @@ and modify ```c++ *fsqrt``` into ```c++ *g4_fsqrt``` so it looks like:
 ```c++
 setFunction("sqrt", (*g4_fsqrt));
 ```
+
+
+
+<img src="Images/cmakeConfiguration.png" alt="CMake configuration" width="50%">
+
