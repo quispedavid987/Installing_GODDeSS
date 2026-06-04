@@ -96,4 +96,35 @@ a executable ``` exampleB1 ``` will be created. Finally, execute the example
 If you can see a new window where the exaple B1 is running, your installation process of Geant4 was succesfull.
 
 
+# Installing GODDESS
+Download the GODDESS_4_3 from official git:
+```html
+https://git.rwth-aachen.de/3pia/forge/goddess-package
+```
+or from sourceFILE folder in this repository. 
+
+Create a folder where GODDeSS will be installed and extract the GODESS file. This will create two folders, ``` source ``` and ``` documentation ```.
+Set the environment variable ``` GODDESS ```, the path where GODDESS folder is. Do it by adding a line to ``` .bashrc ```
+``` bash
+export GODDESS="/path/to/desired/directory/of/GODDESS"
+```
+
+
+
+
+Probably, you will have problems to compile, isnan functions, modifidy some file
+```bash
+/home/USER/GODDESS_4_3/source/G4BasicObjects/G4PropertyFileReadInTools/src/PropertyToolsManager.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4Scintillator/src/G4ScintillatorTile.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4Scintillator/include/G4Wrapping.hh
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4Scintillator/src/ScintillatorSensitiveDetector.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4Scintillator/src/WrappingSensitiveDetector.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4Fibre/src/G4Fibre.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4GeneralParticleSource/src/GeneralParticleSource.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/G4GeneralParticleSource/src/PhotonListSourceMessenger.cc
+/home/meiga/GODDESS_4_3/source/G4BasicObjects/DataProcessing/src/GODDeSS_DataStorage.cc
+/home/meiga/GODDESS_4_3/source/Simulation/src/DataProcessing/UserRunInformation.cc
+```
+
+
 
